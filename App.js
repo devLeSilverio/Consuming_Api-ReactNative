@@ -43,7 +43,8 @@ class App extends Component{
   }
 
   async change(){
-    const response = await api.put(`exemplo_api/pessoa/${this.state.id}`, {nome:`${this.state.nome}`, curso:`${this.state.curso}`});
+    const response = await api.put(`exemplo_api/pessoa/${this.state.id}`, 
+    {nome:`${this.state.nome}`, curso:`${this.state.curso}`});
   }
 
   delete(){
